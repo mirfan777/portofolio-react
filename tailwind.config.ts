@@ -44,6 +44,9 @@ const config: Config = {
     },
   },
   plugins: [require('daisyui')],
+  daisyui: {
+    themes: false,
+  },
   darkMode: 'class',
 };
 export default config;

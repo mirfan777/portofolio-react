@@ -3,11 +3,10 @@
 import { TypeAnimation } from 'react-type-animation';
 import React, { createRef, useState } from "react";
 
-function CodeAnimation() {
+function LoadAnimation() {
   const ref1 = createRef<HTMLSpanElement>();
   const ref2 = createRef<HTMLSpanElement>();
   const ref3 = createRef<HTMLSpanElement>();
-  const ref4 = createRef<HTMLSpanElement>();
 
   const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
@@ -27,15 +26,11 @@ function CodeAnimation() {
     if (ref3.current) {
       ref3.current.classList.remove(CURSOR_CLASS_NAME);
     }
-
-    if (ref4.current) {
-      ref4.current.classList.remove(CURSOR_CLASS_NAME);
-    }
   };
 
   return (
-    <div className="mockup-code lg:w-[500px] sm:w-full w-80 h-[350px] bg-white text-slate-800 dark:bg-gray-800 dark:text-slate-200 drop-shadow-xl overflow-x-auto">
-      <pre data-prefix=">">
+    <div className="mockup-code lg:w-[500px] w-full h-[350px] bg-white text-slate-800 dark:bg-gray-800 dark:text-slate-200 drop-shadow-xl overflow-x-auto">
+      <pre data-prefix="$">
         <code>
           <TypeAnimation
             ref={ref1}
@@ -45,7 +40,7 @@ function CodeAnimation() {
             }}
             className={CURSOR_CLASS_NAME}
             sequence={[
-              '<h1>Salam Kenal</h1>',
+              'lorem ipsum dolor sit amet',
               800,
               handleSequenceComplete,
             ]}
@@ -64,7 +59,7 @@ function CodeAnimation() {
               }}
               className={CURSOR_CLASS_NAME}
               sequence={[
-                '<p>Saya adalah mahasiswa aktif IPB Vokasi jurusan Rekayasa Perangkat Lunak</p>',
+                'two',
                 800,
                 handleSequenceComplete,
               ]}
@@ -84,26 +79,7 @@ function CodeAnimation() {
               }}
               className={CURSOR_CLASS_NAME}
               sequence={[
-                '<p>Saya siap menerima permintaan dan pertanyaan kapan saja</p>',
-                800,
-              ]}
-              repeat={0}
-            />
-          </code>
-        </pre>
-      )}
-      {sequenceIndex > 2 && (
-        <pre data-prefix=">" className="text-red-500 ">
-          <code>
-            <TypeAnimation
-              ref={ref4}
-              cursor={false}
-              style={{
-                fontSize: '12px',
-              }}
-              className={CURSOR_CLASS_NAME}
-              sequence={[
-                '<p>Jangan ragu untuk menghubungi saya untuk informasi lebih lanjut atau untuk memulai kerja sama.</p>',
+                'Provident cupiditate voluptatem et in. Quaerat ',
                 800,
               ]}
               repeat={0}
@@ -126,4 +102,4 @@ function CodeAnimation() {
   );
 }
 
-export default CodeAnimation;
+export default LoadAnimation;
