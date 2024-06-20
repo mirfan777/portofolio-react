@@ -1,6 +1,6 @@
 "use client";
 
-import { TypeAnimation } from 'React-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 import React, { createRef, useState } from "react";
 
 function CodeAnimation() {
