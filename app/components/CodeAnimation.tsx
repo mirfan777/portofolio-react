@@ -3,7 +3,7 @@
 import { TypeAnimation } from 'React-type-animation';
 import React, { createRef, useState } from "react";
 
-export default function Home() {
+function CodeAnimation() {
   const ref1 = createRef<HTMLSpanElement>();
   const ref2 = createRef<HTMLSpanElement>();
   const ref3 = createRef<HTMLSpanElement>();
@@ -101,3 +101,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default CodeAnimation;
