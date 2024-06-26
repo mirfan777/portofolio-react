@@ -177,14 +177,14 @@ export default function Home() {
           <div className="dark:text-white text-midnight-950 flex flex-col items-center justify-center gap-5 lg:w-full w-80">
             <h1 className="text-4xl font-bold">Kuy Kenalan</h1>
             <p className=" lg:w-1/2 w-full text-center">Saya siap menerima permintaan dan pertanyaan kapan saja. Jangan ragu untuk menghubungi saya untuk informasi lebih lanjut atau untuk memulai kerja sama.</p>
-            <a target="blank" href="https://wa.me/62081280513590" className="btn btn-outline btn-success my-10 w-80">Get Started</a>
+            <a target="blank" href="https://wa.me/62081280513590" className="btn btn-outline hover:border-aquamarine-700 darkhover:border-aquamarine-500  hover:text-white text-midnight-950 dark:hover:text-midnight-950 dark:text-aquamarine-500  dark:ring-aquamarine-500 dark:hover:bg-aquamarine-500  outline-aquamarine-700 hover:bg-aquamarine-700 my-10 w-80">Get Started</a>
             <ul className="flex gap-5 lg:hidden">
               <li><a href="https://github.com/mirfan777" target="blank"><FaGithub className="hover:fill-aquamarine-500 dark:hover:fill-aquamarine-500 dark:fill-slate-500 fill-slate-700 w-8 h-8 " /></a></li>
               <li><a href="https://www.linkedin.com/in/maulana-irfan-bbb098209/" target="blank"><FaLinkedin className="hover:fill-aquamarine-500 dark:hover:fill-aquamarine-500 dark:fill-slate-500 fill-slate-700 w-8 h-8 "/></a></li>
               <li><a href="https://www.instagram.com/maw_lana08/" target="blank"><FaInstagram className="hover:fill-aquamarine-500 dark:hover:fill-aquamarine-500 dark:fill-slate-500 fill-slate-700 w-8 h-8 "/></a></li>
               <li><a href="https://www.twitter.com" target="blank"><FaSquareXTwitter className="hover:fill-aquamarine-500 dark:hover:fill-aquamarine-500 dark:fill-slate-500 fill-slate-700 w-8 h-8 "/></a></li>
             </ul>
-            <p className="dark:text-white text-midnight-950">fcmirfan122@gmail.com</p>
+            <a href="mailto:fcmirfan122@gmail.com" className="dark:text-white dark:hover:text-aquamarine-500 hover:text-aquamarine-700 text-midnight-950">fcmirfan122@gmail.com</a>
           </div>
         </div>
       </section>
